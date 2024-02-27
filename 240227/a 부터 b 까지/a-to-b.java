@@ -8,7 +8,7 @@ public class Main {
         int curnt = a;
 
         while(curnt <= b){
-            out.print(curnt + " ");
+            System.out.print(curnt + " ");
             if(curnt % 2 == 0){
                 curnt += 3;
             }
