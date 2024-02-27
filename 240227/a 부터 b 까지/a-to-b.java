@@ -7,18 +7,14 @@ public class Main {
         int b = scanner.nextInt();
         int curnt = a;
 
-        for(int i = a; i <= b; i++){
-            System.out.print(curnt + " ");
-            if(curnt >= b){
-                break;
-            }
-            else if(curnt % 2 == 1){
-                curnt *= 2;
-            }
-            else if(curnt % 2 == 0){
+        while(curnt <= b){
+            out.print(curnt + " ");
+            if(curnt % 2 == 0){
                 curnt += 3;
             }
-            
+            else{
+                curnt *= 2;
+            }
         }
     }
 }
