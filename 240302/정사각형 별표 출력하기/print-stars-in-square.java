@@ -7,7 +7,7 @@ public class Main {
         int n = sc.nextInt();
 
         for(int i = 0; i < n; i++){
-            for(int k = 0; k < 4; k++){
+            for(int k = 0; k < n; k++){
                 System.out.print("*");
             }
             System.out.println();
