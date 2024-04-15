@@ -15,6 +15,6 @@ public class Main {
     if (b == 0) {
         return a;
     }
-    return gcd(b, b % a);
+    return gcd(b, a % b);
     }
 }
