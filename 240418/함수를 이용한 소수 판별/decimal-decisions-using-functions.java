@@ -11,8 +11,13 @@ public class Main {
 
     public static int findNum(int a, int b) {
         int total = 0;
+
         for (int i = a; i <= b; i++) {
-            if (findNum2(i)) {
+            if(a == 1 && b == 1){
+                return total;
+            }
+            else if (findNum2(i)) {
+                System.out.println(i);
                 total += i;
             }
         }
