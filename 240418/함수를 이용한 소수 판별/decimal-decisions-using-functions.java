@@ -17,7 +17,6 @@ public class Main {
                 return total;
             }
             else if (findNum2(i)) {
-                System.out.println(i);
                 total += i;
             }
         }
