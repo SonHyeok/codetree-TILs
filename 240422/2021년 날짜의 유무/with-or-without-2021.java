@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -8,19 +7,25 @@ public class Main {
         int d = sc.nextInt();
 
 
-        if(makeDate(m,d)){
+
+        if(isRightDate(m, d)){
             System.out.println("Yes");
-        }else{
+        }else {
             System.out.println("No");
         }
-    }
 
-    public static boolean makeDate(int m, int d){
-        try{
-            LocalDate date = LocalDate.of(2021, m, d);
-            return true;
-        }catch(Exception e){
-            return false;
+    }
+    
+    static boolean isRightDate(int m, int d){
+        if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12){
+            return d <= 31 && d >= 1;
+
+        }else if(m == 4 || m == 6 || m == 9 || m == 11){
+            return d <= 30 && d >= 1;
+
+        } else if (m == 2) {
+            return d <= 28 && d >= 1;
         }
+        return false;
     }
 }
