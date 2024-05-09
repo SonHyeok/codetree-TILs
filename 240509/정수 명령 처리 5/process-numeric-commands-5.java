@@ -2,16 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 public class Main {
-
-
     public static void main(String[] args) {
+        List<Integer> arrayList = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        
         int n = sc.nextInt();
 
         String command;
         int num;
         
-        List<Integer> arrayList = new ArrayList<>();
-        Scanner sc = new Scanner(System.in);
+
 
         for (int i = 0; i < n; i++) {
             command = sc.next();
