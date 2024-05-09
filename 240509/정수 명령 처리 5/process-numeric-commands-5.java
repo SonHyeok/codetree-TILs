@@ -6,7 +6,7 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n = sc.nextInt();
+             int n = sc.nextInt();
 
         String command;
         int num;
@@ -17,34 +17,17 @@ public class Main {
 
             if(command.equals("push_back")){
                 num = sc.nextInt();
-                pushBack(num);
+                arrayList.add(num);
             } else if (command.equals("pop_back")) {
-                popBack();
+                if(!arrayList.isEmpty()){
+                    arrayList.remove(arrayList.size() - 1);}    
             } else if (command.equals("size")) {
-                arraySize();
+                System.out.println(arrayList.size());
             } else if (command.equals("get")) {
                 num = sc.nextInt();
-                getNumber(num);
+                System.out.println(arrayList.get(num - 1));
             }
         }
     }
 
-    public static void pushBack(int k){
-        arrayList.add(k);
-    }
-
-
-    public static void popBack(){
-        if(!arrayList.isEmpty()){
-            arrayList.remove(arrayList.size() - 1);
-        }
-    }
-
-    public static void arraySize() {
-        System.out.println(arrayList.size());
-    }
-
-    public static void getNumber( int idx) {
-        System.out.println(arrayList.get(idx - 1));
-    }
 }
