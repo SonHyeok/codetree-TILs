@@ -21,14 +21,14 @@ import static java.lang.System.out;public class Main {
             }
         }
 
-//        String collect = Arrays.stream(intList).
-//                mapToObj(String::valueOf).
-//                collect(Collectors.joining(" "));
+       String collect = Arrays.stream(intList).
+               mapToObj(String::valueOf).
+               collect(Collectors.joining(" "));
 
-//        out.println(collect);
+       out.println(collect);
 
-        for (int i : intList) {
-            out.print(i + " ");
-        }
+        // for (int i : intList) {
+        //     out.print(i + " ");
+        // }
     }
 }
