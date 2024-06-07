@@ -17,8 +17,8 @@ public class Main {
             while( j >= 0 && list[j] > key){
                 list[j+1] = list[j];
                 j--;
-                list[j+1] = key;
             }
+            list[j+1] = key;
         }
 
         for(int i = 0; i < list.length; i++){
